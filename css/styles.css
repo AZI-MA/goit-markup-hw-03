@@ -12,6 +12,7 @@
   --box-shadow-button-primary: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --box-shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --page-header-portfolio-border: 1px solid #ececec;
 }
 
 body {
@@ -52,7 +53,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 /* Logo */
@@ -139,15 +139,28 @@ body {
   background-color: var(--tertiary-background-color);
 }
 
+.logo.footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 .footer-studio {
   color: var(--primary-white-color);
 }
 
 .address {
+  padding-bottom: 9px;
   color: var(--primary-white-color);
   font-style: normal;
 }
 
+.contacts.email {
+  padding-bottom: 9px;
+}
+
+.contacts.phone {
+  padding-bottom: 60px;
+}
 .contacts {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -261,7 +274,6 @@ body {
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
-  margin-right: 30px;
 
   color: var(--title-text-color);
 
@@ -270,13 +282,43 @@ body {
   line-height: 1.14;
 }
 
+.feature-list .title:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list p {
   margin-top: 0;
   margin-right: 30px;
 }
+
+.feature-list p:last-child {
+  margin-right: 0;
+}
+
 /* What we do */
 
+.work-list {
+  display: flex;
+}
+
+.work-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-list > .item {
+  margin-bottom: 94px;
+}
+
 /* Our team */
+
+.team-list {
+  display: flex;
+  text-align: center;
+}
+
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team-list .title {
   margin-top: 0;
@@ -297,7 +339,30 @@ body {
 
 /* Styles for portfolio.html */
 
+.page-header.portfolio {
+  margin-bottom: 94px;
+  border: var(--page-header-portfolio-border);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  margin-top: 0;
+}
+
+.projects > .item {
+  width: 370px;
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
 .projects-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -307,6 +372,11 @@ body {
 }
 
 .projects-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -315,4 +385,16 @@ body {
 
 .links {
   text-decoration: none;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters > .item:not(:last-child) {
+  margin-right: 8px;
+}
+.filters > .item {
+  margin-bottom: 50px;
 }
