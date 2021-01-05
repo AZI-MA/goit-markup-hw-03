@@ -144,6 +144,8 @@ img {
 
 .contacts-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 }
@@ -199,7 +201,6 @@ img {
 /* Button */
 
 .button {
-  min-width: 73px;
   border-radius: 4px;
   padding: 6px 22px;
 
@@ -216,7 +217,6 @@ img {
 }
 
 .button.primary {
-  min-width: 200px;
   padding: 10px 32px;
   box-shadow: var(--box-shadow-button-primary);
   color: var(--primary-white-color);
@@ -250,8 +250,9 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .heading-title {
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
 
   color: var(--primary-white-color);
 
@@ -261,6 +262,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.heading-description {
+  margin: 0 auto;
   width: 696px;
 }
 
@@ -367,14 +372,12 @@ margin-right: 30px;
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .projects > .item {
   width: 370px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 .projects-item-descript {
